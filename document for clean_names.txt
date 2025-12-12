@@ -1,0 +1,32 @@
+This is to document about my code clean_names.py
+
+I made this code by doing in a form of function as it can be used whenever needed.
+
+Objective:
+• Remove extra spaces
+• Convert everything to lowercase
+• Capitalize the first letter
+• Print the cleaned list
+for example 
+consider this to be your input
+names = [" liam ", "KrishU", " vIctOr", " aNu ", "JOHN "]
+Then your output should be like
+['Liam', 'Krishu', 'Victor', 'Anu', 'John']
+
+Source code:
+def clean_names(n):
+    refined_names=[]
+    for i in n:
+        refined_names.append((i.strip()).capitalize())
+    return refined_names
+names = [" liam ", "KrishU", " vIctOr", " aNu ", "JOHN "]
+print(clean_names(names))
+
+Explaination:
+1.First we are creating a empty list for storing our changes.
+2.then we are looping the elements in the list.
+3.now we are modifying each element.
+    a.strip()-->used to remove the whitespaces from both sides.
+    b.capitalize()-->it changes the format of a string to a general format like starting with a capital  letter and other remaining characters in lowercase until white space.
+    c.then we are appending elements in the list.
+4.then finally  append each element.
